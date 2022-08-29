@@ -1,0 +1,5 @@
+require('treesitter')
+require('ftelescope')
+require('lspcolors')
+require('fcolorizer')
+require('lsp')

@@ -1,0 +1,9 @@
+envs_dirs:
+  - /home/gala/.local/share/conda/local_envs/
+
+pkgs_dirs:
+  - /home/gala/.local/share/conda/env_pkgs/
+
+auto_activate_base: False
+
+changeps1: False

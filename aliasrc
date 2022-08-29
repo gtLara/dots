@@ -1,0 +1,84 @@
+#!/bin/sh
+
+#Vim stuff
+alias \
+    vim="nvim" \
+    svim="sudo nvim" \
+    vimdiff="nvim -d"
+
+#Git stuff
+
+alias \
+    gs="git status" \
+    gsu="git status -uno" \
+    gc="git commit -m" \
+    gp="git push" \
+    ga="git add" \
+    gd="git diff" \
+    gl="git log" \
+    gga="git status -uno | grep modified | sed \"s/modified:   //g\" | xargs git add" # stages all changes quickly
+
+#SSH
+
+alias \
+    litc56="ssh gabriel-lara@150.164.32.56" \
+    litc60="ssh gabriel-lara@150.164.32.60" \
+    litc61="ssh grupo-omnilogic@150.164.32.61" \
+    litc57="ssh gabriel_lara@150.164.32.57" \
+
+#Verbosity and safety
+
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+
+#Latex and notetaking
+
+alias \
+    texmin="cp $HOME/.config/latex/templates/minimal.tex ./" \
+    texport="cp $HOME/.config/latex/templates/report.tex ./"
+
+#Conda
+
+alias \
+	ca="conda activate" \
+	cdt="conda deactivate"
+
+#Color time
+
+alias \
+	grep="grep --color=auto" \
+	diff="diff --color" \
+	ls="exa --icons --sort=name"
+
+#Long stuff
+
+alias \
+    cuni="cd ~/university/2020-2/" \
+    hg="history | grep" \
+    hdmi="xrandr --output HDMI-1 --mode 1920x1080i" \
+    z="zathura" \
+    crono="sxiv $HOME/university/2020-2/crono.png" \
+	ka="killall" \
+	s="ddgr" \
+	p="sudo pacman" \
+    thm="wal -i" \
+    see="sxiv" \
+    mail="neomutt" \
+    rmw="sed -i 's/[ \t]*$//'" \
+    hkeys="cat ~/.config/sxhkd/sxhkdrc" \
+    sa="source ~/.config/aliasrc"
+    szs="source ~/.config/zsh/.zshrc" \
+    vzs="vim ~/.config/zsh/.zshrc" \
+    czs="cat ~/.config/zsh/.zshrc" \
+    ipy="ipython --TerminalInteractiveShell.editing_mode=vi"
+
+#Disk/USB handling
+
+alias \
+	fd="sudo fdisk" \
+	mount="sudo mount" \
+	umount="sudo umount" \
+	dnode="lsblk | grep -A 1 disk | tail -n 1" \
+	dinfo="fd -l | tail -n 2"
