@@ -1,4 +1,4 @@
-local servers = {'pylsp', 'bashls'}
+local servers = {'pylsp', 'bashls', 'julials', 'texlab'}
 local nvim_lsp = require('lspconfig')
 
 local on_attach = function(client, bufnr)
