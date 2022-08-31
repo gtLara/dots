@@ -1,5 +1,5 @@
 require('treesitter')
 require('ftelescope')
-require('lspcolors')
+require('flsp-colors')
 require('fcolorizer')
 require('lsp')
